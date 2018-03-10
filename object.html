@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+    var dadosPessoais = {
+      nome: ["Matheus", "Jurema", "Barnabé"],
+      sobreNome: ["Pazzinato", "Silva", "Inácio"],
+      endereço: {
+        cep: [80000666, 46321845, 21378914],
+        rua: ["Rua das Treta", "Rua do Fim", "Rua Tempão"],
+        número: [1, 13, 71],
+        complemento: ["Barraco", "Casebre", "Casebre"],
+        bairro: ["Jd. Birosca", "Pq. das Trevas", "Conj. Mógrande"],
+        cidade: ["Beleléu", "Pequenópolis", "Sarandiru"],
+        estado: ["Calamidade", "Paranáuê", "Bahia"],
+        },
+      mostrarMinhasInformacoes: function(){
+      alert("Você é " + this.nome + " " + this.sobreNome + " do estado de " + this.endereço.estado + ", da cidade de " + this.endereço.cidade + " morador do " + this.endereço.complemento + " de número " + this.endereço.número
+       + " da " + this.endereço.rua + " situado no bairro " + this.endereço.bairro + ", com cep de número " + this.endereço.cep + ".");
+      }
+    }
+    dadosPessoais.mostrarMinhasInformacoes();
+    </script>
+  </body>
+</html>
